@@ -1,0 +1,124 @@
+<div class="p-8 space-y-8 max-w-[1400px]">
+    <header class="flex justify-between items-center mb-8">
+        <div>
+            <h2 class="text-2xl font-bold text-[#00081e]">Transaction History</h2>
+            <p class="text-sm text-slate-500">Monitor and manage your global capital flow.</p>
+        </div>
+        <div class="flex gap-4">
+            <button class="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 rounded-md text-sm font-semibold text-slate-600 hover:bg-slate-50 transition-all">
+                <span class="material-symbols-outlined text-sm">filter_list</span>
+                Filters
+            </button>
+            <button class="flex items-center gap-2 px-4 py-2 bg-[#00081e] text-white rounded-md text-sm font-semibold hover:bg-[#0a1f44] transition-all">
+                <span class="material-symbols-outlined text-sm">download</span>
+                Export CSV
+            </button>
+        </div>
+    </header>
+
+    <div class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden">
+        <div class="p-6 border-b border-slate-100 flex flex-wrap gap-4 items-center justify-between">
+            <div class="flex gap-2">
+                <button class="px-4 py-2 text-xs font-bold bg-[#00081e] text-white rounded-full">All</button>
+                <button class="px-4 py-2 text-xs font-bold text-slate-500 hover:bg-slate-50 rounded-full">Income</button>
+                <button class="px-4 py-2 text-xs font-bold text-slate-500 hover:bg-slate-50 rounded-full">Expenses</button>
+                <button class="px-4 py-2 text-xs font-bold text-slate-500 hover:bg-slate-50 rounded-full">Transfers</button>
+            </div>
+            <div class="relative">
+                <span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-slate-400 text-sm">search</span>
+                <input class="pl-10 pr-4 py-2 bg-slate-50 border-none rounded-md text-sm w-64 focus:ring-2 focus:ring-[#005cab]" placeholder="Search by name or ID..."/>
+            </div>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="w-full text-left">
+                <thead>
+                    <tr class="bg-slate-50 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+                        <th class="px-6 py-4">Transaction</th>
+                        <th class="px-6 py-4">Category</th>
+                        <th class="px-6 py-4">Date & Time</th>
+                        <th class="px-6 py-4">Amount</th>
+                        <th class="px-6 py-4">Status</th>
+                        <th class="px-6 py-4">Action</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                    <tr class="hover:bg-slate-50 transition-colors">
+                        <td class="px-6 py-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-blue-50 text-[#005cab] flex items-center justify-center">
+                                    <span class="material-symbols-outlined">shopping_cart</span>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-[#00081e]">Amazon Web Services</p>
+                                    <p class="text-[10px] text-slate-400">ID: #TRX-99281</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <span class="text-xs font-medium text-slate-600 px-2 py-1 bg-slate-100 rounded">Technology</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <p class="text-sm text-[#00081e]">Sept 14, 2024</p>
+                            <p class="text-[10px] text-slate-400">14:22 PM</p>
+                        </td>
+                        <td class="px-6 py-4">
+                            <span class="text-sm font-bold text-red-600">-$1,240.00</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="flex items-center gap-1.5 text-green-600">
+                                <span class="w-1.5 h-1.5 rounded-full bg-green-600"></span>
+                                <span class="text-[10px] font-bold uppercase">Success</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <button class="text-slate-400 hover:text-[#00081e] transition-colors">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 transition-colors">
+                        <td class="px-6 py-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-10 h-10 rounded-full bg-green-50 text-green-600 flex items-center justify-center">
+                                    <span class="material-symbols-outlined">account_balance_wallet</span>
+                                </div>
+                                <div>
+                                    <p class="text-sm font-bold text-[#00081e]">Dividend Payout</p>
+                                    <p class="text-[10px] text-slate-400">ID: #TRX-99275</p>
+                                </div>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <span class="text-xs font-medium text-slate-600 px-2 py-1 bg-slate-100 rounded">Investment</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <p class="text-sm text-[#00081e]">Sept 13, 2024</p>
+                            <p class="text-[10px] text-slate-400">09:15 AM</p>
+                        </td>
+                        <td class="px-6 py-4">
+                            <span class="text-sm font-bold text-green-600">+$450.25</span>
+                        </td>
+                        <td class="px-6 py-4">
+                            <div class="flex items-center gap-1.5 text-green-600">
+                                <span class="w-1.5 h-1.5 rounded-full bg-green-600"></span>
+                                <span class="text-[10px] font-bold uppercase">Success</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4">
+                            <button class="text-slate-400 hover:text-[#00081e] transition-colors">
+                                <span class="material-symbols-outlined">more_horiz</span>
+                            </button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div class="p-6 border-t border-slate-100 flex justify-between items-center bg-slate-50/50">
+            <p class="text-xs text-slate-500 font-medium">Showing 1-10 of 124 transactions</p>
+            <div class="flex gap-2">
+                <button class="px-3 py-1 border border-slate-200 rounded bg-white text-xs font-bold text-slate-400 cursor-not-allowed">Previous</button>
+                <button class="px-3 py-1 border border-slate-200 rounded bg-white text-xs font-bold text-[#00081e] hover:bg-slate-50">Next</button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,143 @@
+<div class="p-8 space-y-8 max-w-[1400px]">
+    <header class="flex justify-between items-center mb-8">
+        <div class="flex items-center bg-white rounded-full px-4 py-2 w-96 shadow-sm">
+            <span class="material-symbols-outlined text-slate-400 mr-2">search</span>
+            <input class="bg-transparent border-none focus:ring-0 text-sm w-full" placeholder="Search transactions, assets or help..." type="text"/>
+        </div>
+        <div class="flex items-center gap-6">
+            <button class="relative text-slate-600 hover:text-[#00081e] transition-colors">
+                <span class="material-symbols-outlined">notifications</span>
+                <span class="absolute top-0 right-0 w-2 h-2 bg-[#005cab] rounded-full border-2 border-white"></span>
+            </button>
+            <div class="flex items-center gap-3 pl-6 border-l border-slate-200">
+                <div class="text-right hidden sm:block">
+                    <p class="text-sm font-bold text-[#00081e] leading-none">Alexander Thorne</p>
+                    <p class="text-[10px] font-medium text-slate-500 uppercase tracking-tighter mt-1">Private Wealth Tier</p>
+                </div>
+                <img class="w-10 h-10 rounded-full object-cover ring-2 ring-white shadow-sm" src="https://picsum.photos/seed/alex/100/100" referrerPolicy="no-referrer"/>
+            </div>
+        </div>
+    </header>
+
+    <section class="grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div class="bg-[#00081e] p-6 rounded-xl shadow-sm text-white relative overflow-hidden group">
+            <div class="absolute -right-4 -bottom-4 opacity-10 transition-transform group-hover:scale-110">
+                <span class="material-symbols-outlined text-[120px]">account_balance_wallet</span>
+            </div>
+            <p class="text-slate-400 text-xs font-semibold uppercase tracking-widest mb-2">Total Net Worth</p>
+            <h3 class="text-3xl font-bold font-headline">$124,500.00</h3>
+            <div class="mt-4 flex items-center gap-2 text-xs font-medium text-blue-300">
+                <span class="material-symbols-outlined text-sm">trending_up</span>
+                <span>+4.2% from last month</span>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+            <div class="flex justify-between items-start mb-4">
+                <div class="p-2 bg-blue-50 text-[#005cab] rounded-lg">
+                    <span class="material-symbols-outlined">payments</span>
+                </div>
+                <span class="text-xs font-bold text-green-600 bg-green-50 px-2 py-1 rounded">Monthly</span>
+            </div>
+            <p class="text-slate-500 text-xs font-semibold uppercase tracking-widest mb-1">Monthly Income</p>
+            <h3 class="text-2xl font-bold font-headline text-[#00081e]">$12,000.00</h3>
+            <div class="mt-4 h-1 w-full bg-slate-100 rounded-full overflow-hidden">
+                <div class="h-full bg-[#005cab] w-[85%]"></div>
+            </div>
+        </div>
+        <div class="bg-white p-6 rounded-xl shadow-sm border border-slate-100">
+            <div class="flex justify-between items-start mb-4">
+                <div class="p-2 bg-orange-50 text-orange-600 rounded-lg">
+                    <span class="material-symbols-outlined">shopping_cart</span>
+                </div>
+                <span class="text-xs font-bold text-slate-400 bg-slate-50 px-2 py-1 rounded">34% of income</span>
+            </div>
+            <p class="text-slate-500 text-xs font-semibold uppercase tracking-widest mb-1">Monthly Expenses</p>
+            <h3 class="text-2xl font-bold font-headline text-[#00081e]">$4,500.00</h3>
+            <div class="mt-4 flex items-center gap-2 text-xs font-medium text-slate-400">
+                <span class="material-symbols-outlined text-sm">info</span>
+                <span>Next bill: Sept 24th</span>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-white p-8 rounded-xl shadow-sm border border-slate-100">
+        <div class="flex justify-between items-center mb-10">
+            <div>
+                <h2 class="text-xl font-bold text-[#00081e]">Wealth Growth Analytics</h2>
+                <p class="text-sm text-slate-500">A detailed view of your asset appreciation over the last 6 months.</p>
+            </div>
+            <div class="flex bg-slate-100 p-1 rounded-lg">
+                <button class="px-4 py-1.5 text-xs font-bold bg-white text-[#00081e] rounded-md shadow-sm">6 Months</button>
+                <button class="px-4 py-1.5 text-xs font-bold text-slate-500 hover:text-[#00081e]">1 Year</button>
+                <button class="px-4 py-1.5 text-xs font-bold text-slate-500 hover:text-[#00081e]">All Time</button>
+            </div>
+        </div>
+        <div class="relative h-[300px] w-full flex items-end justify-between gap-4 px-4">
+            <div class="flex-1 bg-gradient-to-t from-blue-50 to-blue-100 rounded-t-lg h-[40%]"></div>
+            <div class="flex-1 bg-gradient-to-t from-blue-100 to-blue-200 rounded-t-lg h-[55%]"></div>
+            <div class="flex-1 bg-gradient-to-t from-blue-200 to-blue-300 rounded-t-lg h-[48%]"></div>
+            <div class="flex-1 bg-gradient-to-t from-blue-300 to-[#005cab] rounded-t-lg h-[75%]"></div>
+            <div class="flex-1 bg-gradient-to-t from-[#005cab] to-[#00081e] rounded-t-lg h-[92%]"></div>
+            <div class="flex-1 bg-[#00081e] rounded-t-lg h-[100%]"></div>
+        </div>
+        <div class="flex justify-between mt-4 px-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest">
+            <span>March</span>
+            <span>April</span>
+            <span>May</span>
+            <span>June</span>
+            <span>July</span>
+            <span>August</span>
+        </div>
+    </section>
+
+    <section class="bg-white rounded-xl shadow-sm overflow-hidden border border-slate-100">
+        <div class="p-6 border-b border-slate-100 flex justify-between items-center">
+            <h2 class="text-xl font-bold text-[#00081e]">Recent Transactions</h2>
+            <a href="#/transactions" class="text-[#005cab] text-sm font-semibold hover:underline">View All History</a>
+        </div>
+        <div class="overflow-x-auto">
+            <table class="w-full text-left">
+                <thead>
+                    <tr class="bg-slate-50 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
+                        <th class="px-6 py-4">Transaction Name</th>
+                        <th class="px-6 py-4">Date</th>
+                        <th class="px-6 py-4">Amount</th>
+                        <th class="px-6 py-4">Status</th>
+                    </tr>
+                </thead>
+                <tbody class="divide-y divide-slate-100">
+                    <tr class="hover:bg-slate-50 transition-colors">
+                        <td class="px-6 py-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-[#00081e]">
+                                    <span class="material-symbols-outlined text-sm">shopping_bag</span>
+                                </div>
+                                <span class="text-sm font-semibold text-[#00081e]">Apple Store Monthly</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 text-sm text-slate-500">Sept 12, 2024</td>
+                        <td class="px-6 py-4 text-sm font-bold text-[#00081e]">-$14.99</td>
+                        <td class="px-6 py-4">
+                            <span class="px-2 py-1 bg-green-50 text-green-700 text-[10px] font-bold rounded-full uppercase">Completed</span>
+                        </td>
+                    </tr>
+                    <tr class="hover:bg-slate-50 transition-colors">
+                        <td class="px-6 py-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-8 h-8 rounded-full bg-slate-100 flex items-center justify-center text-[#00081e]">
+                                    <span class="material-symbols-outlined text-sm">trending_up</span>
+                                </div>
+                                <span class="text-sm font-semibold text-[#00081e]">Vanguard Dividend</span>
+                            </div>
+                        </td>
+                        <td class="px-6 py-4 text-sm text-slate-500">Sept 10, 2024</td>
+                        <td class="px-6 py-4 text-sm font-bold text-[#005cab]">+$1,240.50</td>
+                        <td class="px-6 py-4">
+                            <span class="px-2 py-1 bg-green-50 text-green-700 text-[10px] font-bold rounded-full uppercase">Completed</span>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+</div>

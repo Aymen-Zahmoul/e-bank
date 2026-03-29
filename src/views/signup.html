@@ -1,0 +1,47 @@
+<div class="min-h-screen flex items-center justify-center p-6 bg-slate-50">
+    <main class="w-full max-w-[400px] flex flex-col gap-10">
+        <header class="flex flex-col items-center gap-4">
+            <div class="flex items-center gap-2">
+                <span class="material-symbols-outlined text-[#005cab] text-4xl">account_balance</span>
+                <h1 class="font-headline text-2xl font-extrabold tracking-tight text-[#00081e] uppercase">AUREX BANK</h1>
+            </div>
+            <h2 class="font-headline text-3xl font-bold text-[#00081e] tracking-tight">Create Account</h2>
+        </header>
+        <div class="bg-white p-8 rounded-xl shadow-sm flex flex-col gap-8">
+            <form id="signup-form" class="flex flex-col gap-6">
+                <div class="flex flex-col gap-2">
+                    <label class="text-xs font-semibold text-slate-500 uppercase tracking-wider" for="full-name">Full Name</label>
+                    <input class="w-full bg-slate-50 border-0 border-b-2 border-transparent focus:border-[#005cab] focus:ring-0 transition-all px-4 py-3 text-slate-900 placeholder:text-slate-400 rounded-t-md" id="full-name" placeholder="John Doe" type="text" required/>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="text-xs font-semibold text-slate-500 uppercase tracking-wider" for="email">Email Address</label>
+                    <input class="w-full bg-slate-50 border-0 border-b-2 border-transparent focus:border-[#005cab] focus:ring-0 transition-all px-4 py-3 text-slate-900 placeholder:text-slate-400 rounded-t-md" id="email" placeholder="name@company.com" type="email" required/>
+                </div>
+                <div class="flex flex-col gap-2">
+                    <label class="text-xs font-semibold text-slate-500 uppercase tracking-wider" for="password">Password</label>
+                    <input class="w-full bg-slate-50 border-0 border-b-2 border-transparent focus:border-[#005cab] focus:ring-0 transition-all px-4 py-3 text-slate-900 placeholder:text-slate-400 rounded-t-md" id="password" placeholder="••••••••" type="password" required/>
+                </div>
+                <div class="flex items-center gap-2">
+                    <input type="checkbox" id="terms" class="rounded border-slate-300 text-[#005cab] focus:ring-[#005cab]" required>
+                    <label for="terms" class="text-xs text-slate-500">I agree to the <a href="#" class="text-[#005cab] hover:underline">Terms of Service</a></label>
+                </div>
+                <button id="signup-btn" class="w-full hero-gradient text-white py-4 rounded-md font-headline font-bold text-lg hover:shadow-lg active:scale-[0.98] transition-all duration-200 mt-2" type="submit">
+                    Create Account
+                </button>
+            </form>
+            <p class="text-center text-sm text-slate-500">
+                Already have an account? 
+                <a class="text-[#005cab] font-semibold hover:text-[#00081e] transition-colors" href="#/login">Sign In</a>
+            </p>
+        </div>
+        <footer class="flex flex-col items-center gap-6">
+            <div class="flex items-center gap-2 bg-slate-100 px-4 py-2 rounded-full text-xs font-medium text-slate-500">
+                <span class="material-symbols-outlined text-[14px]">lock</span>
+                <span>SECURED BY AUREX SHIELD TECHNOLOGY</span>
+            </div>
+            <p class="text-[10px] leading-relaxed text-center text-slate-400 px-4 uppercase tracking-tighter">
+                © 2024 AUREX BANK. Member FDIC. Equal Housing Lender.
+            </p>
+        </footer>
+    </main>
+</div>

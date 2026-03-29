@@ -1,0 +1,105 @@
+<div class="p-8 space-y-8 max-w-[1400px]">
+    <header class="flex justify-between items-center mb-8">
+        <div>
+            <h2 class="text-2xl font-bold text-[#00081e]">Loan Solutions</h2>
+            <p class="text-sm text-slate-500">Flexible credit facilities tailored to your ambitions.</p>
+        </div>
+        <div class="flex gap-4">
+            <button class="flex items-center gap-2 px-4 py-2 bg-white border border-slate-200 rounded-md text-sm font-semibold text-slate-600 hover:bg-slate-50 transition-all">
+                My Applications
+            </button>
+            <button class="btn-primary">Apply for Loan</button>
+        </div>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-blue-500 hover:shadow-md transition-all cursor-pointer group">
+                    <span class="material-symbols-outlined text-3xl text-blue-500 mb-4 group-hover:scale-110 transition-transform">person</span>
+                    <h3 class="font-bold text-[#00081e] mb-2">Personal Loan</h3>
+                    <p class="text-xs text-slate-500 mb-4">Rates from 4.5% APR. Instant approval for qualified clients.</p>
+                    <span class="text-[#005cab] text-xs font-bold uppercase tracking-widest">Learn More →</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-green-500 hover:shadow-md transition-all cursor-pointer group">
+                    <span class="material-symbols-outlined text-3xl text-green-500 mb-4 group-hover:scale-110 transition-transform">home</span>
+                    <h3 class="font-bold text-[#00081e] mb-2">Mortgage</h3>
+                    <p class="text-xs text-slate-500 mb-4">Fixed and variable rates. Up to 95% LTV financing available.</p>
+                    <span class="text-[#005cab] text-xs font-bold uppercase tracking-widest">Learn More →</span>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-sm border-b-4 border-purple-500 hover:shadow-md transition-all cursor-pointer group">
+                    <span class="material-symbols-outlined text-3xl text-purple-500 mb-4 group-hover:scale-110 transition-transform">business_center</span>
+                    <h3 class="font-bold text-[#00081e] mb-2">Business Credit</h3>
+                    <p class="text-xs text-slate-500 mb-4">Working capital and expansion loans for growing enterprises.</p>
+                    <span class="text-[#005cab] text-xs font-bold uppercase tracking-widest">Learn More →</span>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-8">
+                <h3 class="text-xl font-bold text-[#00081e] mb-8">Loan Estimator</h3>
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                    <div class="space-y-8">
+                        <div>
+                            <div class="flex justify-between mb-4">
+                                <label class="text-xs font-bold uppercase tracking-widest text-slate-400">Loan Amount</label>
+                                <span class="text-lg font-bold text-[#00081e]">$25,000</span>
+                            </div>
+                            <input type="range" class="w-full h-2 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-[#005cab]" min="1000" max="100000" step="1000" value="25000">
+                        </div>
+                        <div>
+                            <div class="flex justify-between mb-4">
+                                <label class="text-xs font-bold uppercase tracking-widest text-slate-400">Term (Months)</label>
+                                <span class="text-lg font-bold text-[#00081e]">36 Months</span>
+                            </div>
+                            <input type="range" class="w-full h-2 bg-slate-100 rounded-lg appearance-none cursor-pointer accent-[#005cab]" min="6" max="72" step="6" value="36">
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 rounded-xl p-8 flex flex-col justify-center items-center text-center space-y-4">
+                        <p class="text-xs font-bold uppercase tracking-widest text-slate-400">Estimated Monthly Payment</p>
+                        <h4 class="text-4xl font-bold text-[#00081e] font-headline">$744.12</h4>
+                        <p class="text-[10px] text-slate-400">Based on 4.5% APR. Final rates may vary based on credit profile.</p>
+                        <button class="w-full btn-primary mt-4">Start Application</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="bg-white rounded-xl shadow-sm border border-slate-100 overflow-hidden">
+            <div class="p-6 border-b border-slate-100">
+                <h3 class="font-bold text-[#00081e]">Active Loans</h3>
+            </div>
+            <div class="p-6 space-y-6">
+                <div class="p-4 bg-slate-50 rounded-lg border border-slate-100">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <p class="text-xs font-bold text-[#00081e]">Personal Loan</p>
+                            <p class="text-[10px] text-slate-400">#LN-88219</p>
+                        </div>
+                        <span class="text-[10px] font-bold text-blue-600 bg-blue-50 px-2 py-1 rounded uppercase">Active</span>
+                    </div>
+                    <div class="space-y-2">
+                        <div class="flex justify-between text-[10px] font-bold text-slate-400 uppercase">
+                            <span>Progress</span>
+                            <span>$12,400 / $20,000</span>
+                        </div>
+                        <div class="h-1.5 bg-slate-200 rounded-full overflow-hidden">
+                            <div class="h-full bg-[#005cab] w-[62%]"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="p-4 bg-slate-50 rounded-lg border border-slate-100 opacity-60">
+                    <div class="flex justify-between items-start mb-4">
+                        <div>
+                            <p class="text-xs font-bold text-[#00081e]">Auto Financing</p>
+                            <p class="text-[10px] text-slate-400">#LN-77102</p>
+                        </div>
+                        <span class="text-[10px] font-bold text-slate-500 bg-slate-200 px-2 py-1 rounded uppercase">Paid Off</span>
+                    </div>
+                    <div class="h-1.5 bg-slate-200 rounded-full w-full">
+                        <div class="h-full bg-slate-400 w-full"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

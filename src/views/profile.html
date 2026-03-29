@@ -1,0 +1,209 @@
+<div class="space-y-8" style="animation: fade-in 0.4s ease-out;">
+  <style>
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+
+  <!-- Profile Header -->
+  <header class="flex flex-col lg:flex-row justify-between items-start lg:items-end gap-6">
+    <div class="flex items-center gap-6">
+      <div class="w-24 h-24 rounded-full bg-slate-950 text-slate-50 flex items-center justify-center font-serif italic text-4xl border-4 border-white shadow-xl">
+        JS
+      </div>
+      <div>
+        <div class="flex items-center gap-3">
+          <h2 class="font-serif italic text-4xl">Julianne V. Sterling</h2>
+          <span class="px-3 py-1 bg-green-100 text-green-700 text-[10px] font-bold rounded-full uppercase tracking-widest">Verified</span>
+        </div>
+        <p class="text-sm opacity-60 mt-2 font-mono">ENTITY_ID: AX-001 // JOINED: 12_OCT_2022</p>
+      </div>
+    </div>
+    <div class="flex gap-4 w-full lg:w-auto">
+      <button class="flex-1 lg:flex-none px-6 py-3 bg-white border border-slate-950/10 rounded-lg text-sm font-bold hover:bg-slate-950/5 transition-colors">
+        EDIT_PROFILE
+      </button>
+      <button class="flex-1 lg:flex-none px-6 py-3 bg-slate-950 text-slate-50 rounded-lg text-sm font-bold hover:opacity-90 transition-opacity">
+        FREEZE_ACCOUNT
+      </button>
+    </div>
+  </header>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <!-- Left Column: Details & Stats -->
+    <div class="space-y-8">
+      <!-- Contact Info -->
+      <div class="bg-white p-8 border border-slate-950/10 rounded-2xl space-y-6">
+        <h4 class="font-serif italic text-xl border-b border-slate-950/10 pb-4">Entity Details</h4>
+        <div class="space-y-4">
+          <div class="flex items-center gap-4 text-sm">
+            <span class="material-symbols-outlined opacity-40 text-[16px]">mail</span>
+            <span>j.sterling@aurex.com</span>
+          </div>
+          <div class="flex items-center gap-4 text-sm">
+            <span class="material-symbols-outlined opacity-40 text-[16px]">phone</span>
+            <span>+44 20 7946 0123</span>
+          </div>
+          <div class="flex items-center gap-4 text-sm">
+            <span class="material-symbols-outlined opacity-40 text-[16px]">location_on</span>
+            <span>Mayfair, London, UK</span>
+          </div>
+          <div class="flex items-center gap-4 text-sm">
+            <span class="material-symbols-outlined opacity-40 text-[16px]">calendar_today</span>
+            <span>Born: 24 May 1982</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Financial Overview -->
+      <div class="bg-slate-950 p-8 rounded-2xl text-slate-50 space-y-8">
+        <div>
+          <p class="text-[10px] uppercase tracking-widest opacity-50 mb-2">Total Liquidity</p>
+          <h3 class="text-4xl font-bold tracking-tight">$12,402,840.12</h3>
+        </div>
+        <div class="grid grid-cols-2 gap-6">
+          <div>
+            <p class="text-[10px] uppercase tracking-widest opacity-50 mb-1">Monthly Inflow</p>
+            <p class="text-lg font-bold text-green-400">+$842,000</p>
+          </div>
+          <div>
+            <p class="text-[10px] uppercase tracking-widest opacity-50 mb-1">Monthly Outflow</p>
+            <p class="text-lg font-bold text-red-400">-$124,500</p>
+          </div>
+        </div>
+        <div class="p-4 bg-white/5 rounded-xl border border-white/10">
+          <div class="flex justify-between items-center mb-2">
+            <p class="text-[10px] uppercase tracking-widest opacity-50">Risk Exposure</p>
+            <span class="text-[10px] font-bold text-green-400">LOW</span>
+          </div>
+          <div class="h-1 bg-white/10 rounded-full overflow-hidden">
+            <div class="h-full w-[12%] bg-green-400"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Middle Column: Cards & Activity -->
+    <div class="lg:col-span-2 space-y-8">
+      <!-- Active Cards -->
+      <div class="space-y-4">
+        <div class="flex justify-between items-center">
+          <h4 class="font-serif italic text-xl">Active Instruments</h4>
+          <button class="text-[10px] font-bold uppercase tracking-widest opacity-50 hover:opacity-100 transition-opacity">Manage Cards</button>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          <div class="bg-gradient-to-br from-slate-950 to-slate-900 p-8 rounded-2xl text-slate-50 relative overflow-hidden group">
+            <div class="absolute top-0 right-0 p-8 opacity-20 group-hover:opacity-40 transition-opacity">
+              <span class="material-symbols-outlined" style="font-size: 120px; line-height: 1;">credit_card</span>
+            </div>
+            <div class="relative z-10 space-y-12">
+              <div class="flex justify-between items-start">
+                <p class="font-serif italic text-2xl">Aurex Black</p>
+                <div class="w-10 h-6 bg-slate-50/20 rounded-md"></div>
+              </div>
+              <div>
+                <p class="font-mono text-lg tracking-[0.2em]">**** **** **** 8829</p>
+                <div class="flex justify-between mt-4">
+                  <p class="text-[10px] uppercase tracking-widest opacity-50">Julianne Sterling</p>
+                  <p class="text-[10px] uppercase tracking-widest opacity-50">12/28</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="bg-white p-8 border border-slate-950/10 rounded-2xl flex flex-col justify-center items-center border-dashed group hover:bg-slate-950/5 cursor-pointer transition-colors">
+            <div class="w-12 h-12 rounded-full bg-slate-950/5 flex items-center justify-center mb-4 group-hover:scale-110 transition-transform">
+              <span class="material-symbols-outlined opacity-40 text-[24px]">credit_card</span>
+            </div>
+            <p class="text-sm font-bold opacity-60">ISSUE_NEW_INSTRUMENT</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Transaction History -->
+      <div class="bg-white border border-slate-950/10 rounded-2xl overflow-hidden">
+        <div class="p-6 border-b border-slate-950/10 flex justify-between items-center">
+          <h4 class="font-serif italic text-xl">Recent Activity</h4>
+          <div class="flex gap-4">
+            <button class="p-2 hover:bg-[#141414]/5 rounded-lg transition-colors">
+              <span class="material-symbols-outlined opacity-40 text-[18px]">download</span>
+            </button>
+            <button class="p-2 hover:bg-[#141414]/5 rounded-lg transition-colors">
+              <span class="material-symbols-outlined opacity-40 text-[18px]">more_vert</span>
+            </button>
+          </div>
+        </div>
+        <div class="overflow-x-auto">
+          <table class="w-full text-left border-collapse">
+            <tbody class="divide-y divide-slate-950/10">
+              <tr class="hover:bg-slate-950/5 transition-colors group">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-4">
+                    <div class="w-8 h-8 rounded-lg bg-slate-950/5 flex items-center justify-center">
+                      <span class="material-symbols-outlined opacity-40 text-[14px]">history</span>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold">Sotheby's Auction</p>
+                      <p class="text-[10px] opacity-40">24 Mar 2026</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4"><span class="font-mono text-[10px] opacity-50">PURCHASE</span></td>
+                <td class="px-6 py-4"><p class="text-sm font-bold text-slate-950">-$1,250,000</p></td>
+                <td class="px-6 py-4 text-right"><span class="text-[10px] font-bold px-2 py-1 rounded-full bg-green-100 text-green-700">COMPLETED</span></td>
+              </tr>
+              <tr class="hover:bg-slate-950/5 transition-colors group">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-4">
+                    <div class="w-8 h-8 rounded-lg bg-slate-950/5 flex items-center justify-center">
+                      <span class="material-symbols-outlined opacity-40 text-[14px]">history</span>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold">Aurex Dividend</p>
+                      <p class="text-[10px] opacity-40">22 Mar 2026</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4"><span class="font-mono text-[10px] opacity-50">INCOME</span></td>
+                <td class="px-6 py-4"><p class="text-sm font-bold text-green-600">+$42,500</p></td>
+                <td class="px-6 py-4 text-right"><span class="text-[10px] font-bold px-2 py-1 rounded-full bg-green-100 text-green-700">COMPLETED</span></td>
+              </tr>
+              <tr class="hover:bg-slate-950/5 transition-colors group">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-4">
+                    <div class="w-8 h-8 rounded-lg bg-slate-950/5 flex items-center justify-center">
+                      <span class="material-symbols-outlined opacity-40 text-[14px]">history</span>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold">Global FX Transfer</p>
+                      <p class="text-[10px] opacity-40">20 Mar 2026</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4"><span class="font-mono text-[10px] opacity-50">TRANSFER</span></td>
+                <td class="px-6 py-4"><p class="text-sm font-bold text-slate-950">-$850,000</p></td>
+                <td class="px-6 py-4 text-right"><span class="text-[10px] font-bold px-2 py-1 rounded-full bg-yellow-100 text-yellow-700">PENDING</span></td>
+              </tr>
+              <tr class="hover:bg-slate-950/5 transition-colors group">
+                <td class="px-6 py-4">
+                  <div class="flex items-center gap-4">
+                    <div class="w-8 h-8 rounded-lg bg-slate-950/5 flex items-center justify-center">
+                      <span class="material-symbols-outlined opacity-40 text-[14px]">history</span>
+                    </div>
+                    <div>
+                      <p class="text-sm font-bold">Apple Inc. Stock</p>
+                      <p class="text-[10px] opacity-40">18 Mar 2026</p>
+                    </div>
+                  </div>
+                </td>
+                <td class="px-6 py-4"><span class="font-mono text-[10px] opacity-50">ASSET</span></td>
+                <td class="px-6 py-4"><p class="text-sm font-bold text-slate-950">-$240,000</p></td>
+                <td class="px-6 py-4 text-right"><span class="text-[10px] font-bold px-2 py-1 rounded-full bg-green-100 text-green-700">COMPLETED</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

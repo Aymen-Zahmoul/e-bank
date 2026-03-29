@@ -1,0 +1,165 @@
+<div class="space-y-8" style="animation: fade-in 0.4s ease-out;">
+  <header class="flex justify-between items-end">
+    <div>
+      <h2 class="font-serif italic text-4xl">Fraud & Security Center</h2>
+      <p class="text-sm opacity-60 mt-2 font-mono">THREAT_LEVEL: ELEVATED // ACTIVE_MONITORING: ENABLED</p>
+    </div>
+    <div class="flex gap-4">
+      <button class="px-6 py-3 bg-red-600 text-white rounded-lg text-sm font-bold hover:bg-red-700 transition-colors flex items-center gap-2">
+        <span class="material-symbols-outlined text-[18px]">lock</span>
+        <span>LOCKDOWN_SYSTEM</span>
+      </button>
+    </div>
+  </header>
+
+  <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+    <!-- Risk Score Widget -->
+    <div class="bg-slate-950 p-8 rounded-2xl text-slate-50 flex flex-col items-center justify-center text-center space-y-6 relative overflow-hidden">
+      <div class="absolute inset-0 opacity-10 flex items-center justify-center">
+        <div class="w-full h-full border-[1px] border-slate-50 border-dashed rounded-full scale-150 animate-spin-slow"></div>
+      </div>
+      <p class="text-[10px] uppercase tracking-[0.4em] font-bold opacity-50 z-10 w-full">Global Risk Score</p>
+      <div class="relative z-10">
+        <div class="w-48 h-48 rounded-full border-8 border-slate-50/10 flex items-center justify-center">
+          <span class="text-6xl font-display font-bold">98.2</span>
+        </div>
+        <div class="absolute inset-0 border-8 border-green-500 rounded-full border-t-transparent -rotate-45"></div>
+      </div>
+      <div class="z-10 w-full">
+        <p class="text-sm font-bold text-green-500">OPTIMAL_SECURITY_STATE</p>
+        <p class="text-[10px] opacity-40 mt-1">Last scan: 2 minutes ago</p>
+      </div>
+    </div>
+
+    <!-- Active Threats -->
+    <div class="lg:col-span-2 bg-white p-8 border border-slate-950/10 rounded-2xl space-y-8">
+      <div class="flex justify-between items-center">
+        <h4 class="font-serif italic text-xl">Active Anomalies</h4>
+        <div class="flex gap-2">
+          <span class="px-2 py-1 bg-red-100 text-red-700 text-[10px] font-bold rounded-full">3 CRITICAL</span>
+          <span class="px-2 py-1 bg-yellow-100 text-yellow-700 text-[10px] font-bold rounded-full">12 WARNING</span>
+        </div>
+      </div>
+      <div class="space-y-4">
+        <div class="p-4 bg-slate-950/5 rounded-xl border border-slate-950/10 flex items-center justify-between group hover:bg-slate-950/10 transition-colors">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center bg-red-100 text-red-600">
+              <span class="material-symbols-outlined text-[20px]">bolt</span>
+            </div>
+            <div>
+              <p class="text-sm font-bold">Unusual Volume Spike</p>
+              <p class="text-[10px] opacity-50">Aurex Liquidity Pool // 11:24:02</p>
+            </div>
+          </div>
+          <button class="px-4 py-2 bg-slate-950 text-slate-50 rounded-lg text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity">
+            INVESTIGATE
+          </button>
+        </div>
+        <div class="p-4 bg-slate-950/5 rounded-xl border border-slate-950/10 flex items-center justify-between group hover:bg-slate-950/10 transition-colors">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center bg-yellow-100 text-yellow-600">
+              <span class="material-symbols-outlined text-[20px]">lock</span>
+            </div>
+            <div>
+              <p class="text-sm font-bold">Multiple Login Failures</p>
+              <p class="text-[10px] opacity-50">Entity AX-8829 (Marcus Thorne) // 11:22:15</p>
+            </div>
+          </div>
+          <button class="px-4 py-2 bg-slate-950 text-slate-50 rounded-lg text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity">
+            INVESTIGATE
+          </button>
+        </div>
+        <div class="p-4 bg-slate-950/5 rounded-xl border border-slate-950/10 flex items-center justify-between group hover:bg-slate-950/10 transition-colors">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-lg flex items-center justify-center bg-yellow-100 text-yellow-600">
+              <span class="material-symbols-outlined text-[20px]">monitoring</span>
+            </div>
+            <div>
+              <p class="text-sm font-bold">Cross-Border Velocity Alert</p>
+              <p class="text-[10px] opacity-50">Entity AX-001 (Julianne Sterling) // 11:18:45</p>
+            </div>
+          </div>
+          <button class="px-4 py-2 bg-slate-950 text-slate-50 rounded-lg text-[10px] font-bold opacity-0 group-hover:opacity-100 transition-opacity">
+            INVESTIGATE
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 mt-8">
+    <!-- AI Pattern Detection -->
+    <div class="bg-white p-8 border border-slate-950/10 rounded-2xl space-y-8">
+      <h4 class="font-serif italic text-xl">AI Pattern Detection</h4>
+      <div class="space-y-6">
+        <div class="p-6 bg-slate-950 text-slate-50 rounded-xl relative overflow-hidden">
+          <div class="absolute top-0 right-0 p-4 opacity-10">
+            <span class="material-symbols-outlined" style="font-size: 80px;">monitoring</span>
+          </div>
+          <p class="text-[10px] uppercase tracking-widest opacity-50 mb-2">Neural Scan v8.2</p>
+          <p class="text-sm italic font-serif leading-relaxed relative z-10">
+            "Detected potential layering pattern in European SWIFT transfers. 
+            Correlation with historical AX-992 incident: 84.2%. Recommend 
+            enhanced due diligence on all transfers &gt; $100M."
+          </p>
+        </div>
+        <div class="grid grid-cols-2 gap-4">
+          <div class="p-4 border border-slate-950/10 rounded-xl">
+            <p class="text-[10px] uppercase tracking-widest opacity-50 mb-1">False Positives</p>
+            <p class="text-2xl font-bold">0.02%</p>
+          </div>
+          <div class="p-4 border border-slate-950/10 rounded-xl">
+            <p class="text-[10px] uppercase tracking-widest opacity-50 mb-1">Threats Blocked</p>
+            <p class="text-2xl font-bold">1,240</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Security Ledger -->
+    <div class="bg-white border border-slate-950/10 rounded-2xl overflow-hidden">
+      <div class="p-6 border-b border-slate-950/10 flex justify-between items-center">
+        <h4 class="font-serif italic text-xl">Security Ledger</h4>
+        <button class="text-[10px] font-bold uppercase tracking-widest opacity-50 hover:opacity-100 transition-opacity">View Full Log</button>
+      </div>
+      <div class="overflow-x-auto">
+        <table class="w-full text-left border-collapse">
+          <thead>
+            <tr class="bg-slate-950/5">
+              <th class="px-6 py-4 text-[10px] font-bold uppercase tracking-widest opacity-50">Event</th>
+              <th class="px-6 py-4 text-[10px] font-bold uppercase tracking-widest opacity-50">Status</th>
+              <th class="px-6 py-4 text-[10px] font-bold uppercase tracking-widest opacity-50">Timestamp</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-950/10">
+            <tr class="hover:bg-slate-950/5 transition-colors group">
+              <td class="px-6 py-4"><span class="font-mono text-xs font-bold">IP_WHITELIST_UPDATE</span></td>
+              <td class="px-6 py-4"><span class="text-[10px] font-bold px-2 py-1 rounded-full bg-green-100 text-green-700">SUCCESS</span></td>
+              <td class="px-6 py-4"><span class="font-mono text-[10px] opacity-50">11:24:02</span></td>
+            </tr>
+            <tr class="hover:bg-slate-950/5 transition-colors group">
+              <td class="px-6 py-4"><span class="font-mono text-xs font-bold">ENCRYPTION_KEY_ROTATION</span></td>
+              <td class="px-6 py-4"><span class="text-[10px] font-bold px-2 py-1 rounded-full bg-green-100 text-green-700">SUCCESS</span></td>
+              <td class="px-6 py-4"><span class="font-mono text-[10px] opacity-50">11:20:15</span></td>
+            </tr>
+            <tr class="hover:bg-slate-950/5 transition-colors group">
+              <td class="px-6 py-4"><span class="font-mono text-xs font-bold">UNAUTHORIZED_API_CALL</span></td>
+              <td class="px-6 py-4"><span class="text-[10px] font-bold px-2 py-1 rounded-full bg-red-100 text-red-700">BLOCKED</span></td>
+              <td class="px-6 py-4"><span class="font-mono text-[10px] opacity-50">11:15:40</span></td>
+            </tr>
+            <tr class="hover:bg-slate-950/5 transition-colors group">
+              <td class="px-6 py-4"><span class="font-mono text-xs font-bold">SYSTEM_HEALTH_CHECK</span></td>
+              <td class="px-6 py-4"><span class="text-[10px] font-bold px-2 py-1 rounded-full bg-green-100 text-green-700">SUCCESS</span></td>
+              <td class="px-6 py-4"><span class="font-mono text-[10px] opacity-50">11:10:00</span></td>
+            </tr>
+            <tr class="hover:bg-slate-950/5 transition-colors group">
+              <td class="px-6 py-4"><span class="font-mono text-xs font-bold">DATABASE_BACKUP_INIT</span></td>
+              <td class="px-6 py-4"><span class="text-[10px] font-bold px-2 py-1 rounded-full bg-green-100 text-green-700">SUCCESS</span></td>
+              <td class="px-6 py-4"><span class="font-mono text-[10px] opacity-50">11:05:22</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</div>

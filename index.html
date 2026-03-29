@@ -1,0 +1,168 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUREX BANK | Premium Wealth Management</title>
+    <link rel="stylesheet" href="/src/css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                        serif: ['Manrope', 'sans-serif'],
+                        display: ['Manrope', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        /* Component specific styles */
+        .nav-link { @apply text-slate-600 hover:text-[#00081e] transition-colors; }
+        .nav-link.active { @apply text-[#005cab] font-semibold border-b-2 border-[#005cab] pb-1; }
+        .btn-primary { @apply bg-[#00081e] text-white px-6 py-2.5 rounded-md font-semibold hover:bg-[#0a1f44] transition-all active:scale-95 duration-200; }
+        .sidebar-link { @apply flex items-center gap-3 text-slate-500 px-4 py-3 hover:bg-[#eceef1] hover:text-[#005cab] rounded-md transition-all; }
+        .sidebar-link.active { @apply bg-white text-[#00081e] shadow-sm font-semibold; }
+        .sidebar-link.active .material-symbols-outlined { @apply text-[#005cab]; }
+    </style>
+    <style>
+        /* Dark Mode Overrides & Transitions */
+        html.dark {
+            background-color: #111827;
+            color: #f3f4f6;
+        }
+        html.dark body, html.dark .bg-\[\#f7f9fc\] { background-color: #111827 !important; }
+        html.dark .bg-white { background-color: #1f2937 !important; }
+        html.dark .bg-slate-50 { background-color: #374151 !important; }
+        html.dark .text-\[\#00081e\] { color: #ffffff !important; }
+        html.dark .text-\[\#191c1e\] { color: #f3f4f6 !important; }
+        html.dark .text-slate-600, html.dark .text-slate-500, html.dark .text-slate-400 { color: #cbd5e1 !important; }
+        html.dark .border-slate-100, html.dark .border-slate-200 { border-color: #475569 !important; }
+        
+        html.dark .bg-\[\#00081e\] { background-color: #0ea5e9 !important; color: #ffffff !important; }
+        html.dark .bg-indigo-50 { background-color: rgba(99, 102, 241, 0.2) !important; }
+        html.dark .bg-blue-50 { background-color: rgba(59, 130, 246, 0.2) !important; }
+        html.dark .bg-green-50 { background-color: rgba(34, 197, 94, 0.2) !important; color: #4ade80 !important; }
+        html.dark .text-\[\#005cab\] { color: #38bdf8 !important; }
+        html.dark .border-\[\#005cab\] { border-color: #38bdf8 !important; }
+
+        html.dark .nav-link:hover { color: #ffffff !important; }
+        html.dark .nav-link.active { color: #38bdf8 !important; border-bottom-color: #38bdf8 !important; }
+        html.dark .sidebar-link:hover { background-color: #374151 !important; color: #ffffff !important; }
+        html.dark .sidebar-link.active { background-color: #1f2937 !important; color: #ffffff !important; box-shadow: none !important; border: 1px solid #4b5563; }
+        html.dark .sidebar-link.active .material-symbols-outlined { color: #38bdf8 !important; }
+
+        /* The button dark mode toggle switch */
+        .toggle-switch {
+            position: relative;
+            width: 60px;
+            height: 30px;
+            --light: #d8dbe0;
+            --dark: #28292c;
+            --link: rgb(27, 129, 112);
+            --link-hover: rgb(24, 94, 82);
+            z-index: 100;
+        }
+
+        .switch-label {
+            position: absolute;
+            width: 100%;
+            height: 30px;
+            background-color: var(--dark);
+            border-radius: 15px;
+            cursor: pointer;
+            border: 3px solid var(--dark);
+            box-sizing: border-box;
+        }
+
+        .checkbox {
+            position: absolute;
+            display: none;
+        }
+
+        .slider {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+
+        .checkbox:checked ~ .slider {
+            background-color: var(--light);
+        }
+
+        .slider::before {
+            content: "";
+            position: absolute;
+            top: 2px;
+            left: 2px;
+            width: 20px;
+            height: 20px;
+            border-radius: 50%;
+            -webkit-box-shadow: inset 8px -3px 0px 0px var(--light);
+            box-shadow: inset 8px -3px 0px 0px var(--light);
+            background-color: var(--dark);
+            -webkit-transition: 0.3s;
+            transition: 0.3s;
+        }
+
+        .checkbox:checked ~ .slider::before {
+            -webkit-transform: translateX(30px);
+            -ms-transform: translateX(30px);
+            transform: translateX(30px);
+            background-color: var(--dark);
+            -webkit-box-shadow: none;
+            box-shadow: none;
+        }
+
+        /* Global Transitions Refinement */
+        *, *::before, *::after {
+            transition-property: background-color, border-color, color, fill, stroke, box-shadow;
+            transition-duration: 300ms;
+            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+  </head>
+  <body class="bg-[#f7f9fc] text-[#191c1e] font-sans antialiased">
+    <div id="app"></div>
+    
+    <!-- Floating Dark Mode Toggle -->
+    <div class="fixed bottom-6 right-6 z-[9999]" title="Toggle Dark/Light Mode">
+      <div class="toggle-switch">
+        <label class="switch-label">
+          <input type="checkbox" class="checkbox" id="dark-mode-toggle">
+          <span class="slider"></span>
+        </label>
+      </div>
+    </div>
+
+    <script type="module" src="/src/js/app.js"></script>
+    <script>
+      const toggle = document.getElementById('dark-mode-toggle');
+      // Load saved theme
+      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
+          document.documentElement.classList.add('dark');
+          toggle.checked = true;
+      }
+      
+      toggle.addEventListener('change', (e) => {
+          if (e.target.checked) {
+              document.documentElement.classList.add('dark');
+              localStorage.setItem('theme', 'dark');
+          } else {
+              document.documentElement.classList.remove('dark');
+              localStorage.setItem('theme', 'light');
+          }
+      });
+    </script>
+  </body>
+</html>
+

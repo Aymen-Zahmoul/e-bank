@@ -1,0 +1,140 @@
+<div class="p-8 space-y-8 max-w-[1400px]">
+    <header class="flex justify-between items-center mb-8">
+        <div>
+            <h2 class="text-2xl font-bold text-[#00081e]">Card Management</h2>
+            <p class="text-sm text-slate-500">Control your physical and virtual spending assets.</p>
+        </div>
+        <button class="btn-primary flex items-center gap-2">
+            <span class="material-symbols-outlined text-sm">add</span>
+            Request New Card
+        </button>
+    </header>
+
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="lg:col-span-2 space-y-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="card-3d-glow h-56 rounded-2xl p-8 text-white flex flex-col justify-between relative overflow-hidden group">
+                    <div class="card-reflection absolute inset-0 opacity-0 group-hover:opacity-100 transition-opacity duration-700"></div>
+                    <div class="flex justify-between items-start relative z-10">
+                        <span class="text-xl font-bold tracking-tight italic">AUREX BLACK</span>
+                        <span class="material-symbols-outlined text-3xl opacity-40">contactless</span>
+                    </div>
+                    <div class="space-y-4 relative z-10">
+                        <p class="font-mono text-xl tracking-[0.25em]">•••• •••• •••• 8821</p>
+                        <div class="flex justify-between items-end">
+                            <div>
+                                <p class="text-[8px] opacity-40 uppercase tracking-widest mb-1">Card Holder</p>
+                                <p class="text-xs font-bold tracking-widest uppercase">Alexander Thorne</p>
+                            </div>
+                            <div>
+                                <p class="text-[8px] opacity-40 uppercase tracking-widest mb-1">Expires</p>
+                                <p class="text-xs font-bold tracking-widest uppercase">12/28</p>
+                            </div>
+                            <div class="flex -space-x-2">
+                                <div class="w-8 h-8 rounded-full bg-white/20"></div>
+                                <div class="w-8 h-8 rounded-full bg-white/10"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="bg-white border-2 border-dashed border-slate-200 rounded-2xl p-8 flex flex-col items-center justify-center gap-4 text-slate-400 hover:border-[#005cab] hover:text-[#005cab] transition-all cursor-pointer">
+                    <span class="material-symbols-outlined text-4xl">add_circle</span>
+                    <p class="font-bold text-sm uppercase tracking-widest">Add Virtual Card</p>
+                </div>
+            </div>
+
+            <div class="bg-white rounded-xl shadow-sm border border-slate-100">
+                <div class="p-6 border-b border-slate-100">
+                    <h3 class="font-bold text-[#00081e]">Security & Permissions</h3>
+                </div>
+                <div class="p-6 space-y-6">
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-blue-50 text-[#005cab] rounded-lg flex items-center justify-center">
+                                <span class="material-symbols-outlined">lock</span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-[#00081e]">Freeze Card</p>
+                                <p class="text-xs text-slate-500">Temporarily disable all transactions.</p>
+                            </div>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="sr-only peer">
+                            <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#005cab]"></div>
+                        </label>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-blue-50 text-[#005cab] rounded-lg flex items-center justify-center">
+                                <span class="material-symbols-outlined">public</span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-[#00081e]">International Use</p>
+                                <p class="text-xs text-slate-500">Allow transactions outside your home country.</p>
+                            </div>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="sr-only peer" checked>
+                            <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#005cab]"></div>
+                        </label>
+                    </div>
+                    <div class="flex justify-between items-center">
+                        <div class="flex items-center gap-4">
+                            <div class="w-10 h-10 bg-blue-50 text-[#005cab] rounded-lg flex items-center justify-center">
+                                <span class="material-symbols-outlined">contactless</span>
+                            </div>
+                            <div>
+                                <p class="text-sm font-bold text-[#00081e]">Contactless Payments</p>
+                                <p class="text-xs text-slate-500">Enable NFC and tap-to-pay features.</p>
+                            </div>
+                        </div>
+                        <label class="relative inline-flex items-center cursor-pointer">
+                            <input type="checkbox" class="sr-only peer" checked>
+                            <div class="w-11 h-6 bg-slate-200 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-[#005cab]"></div>
+                        </label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="space-y-8">
+            <div class="bg-white rounded-xl shadow-sm border border-slate-100 p-6">
+                <h3 class="font-bold text-[#00081e] mb-6">Spending Limits</h3>
+                <div class="space-y-8">
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">
+                            <span>Daily Limit</span>
+                            <span class="text-[#00081e]">$2,450 / $5,000</span>
+                        </div>
+                        <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-[#005cab] w-[49%]"></div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="flex justify-between text-xs font-bold uppercase tracking-widest text-slate-400 mb-2">
+                            <span>ATM Withdrawal</span>
+                            <span class="text-[#00081e]">$500 / $1,000</span>
+                        </div>
+                        <div class="h-2 bg-slate-100 rounded-full overflow-hidden">
+                            <div class="h-full bg-[#00081e] w-[50%]"></div>
+                        </div>
+                    </div>
+                    <button class="w-full py-3 border border-slate-200 rounded-md text-sm font-bold text-slate-600 hover:bg-slate-50 transition-all">
+                        Adjust Limits
+                    </button>
+                </div>
+            </div>
+
+            <div class="bg-[#005cab] rounded-xl shadow-sm p-6 text-white">
+                <div class="flex items-center gap-4 mb-4">
+                    <span class="material-symbols-outlined text-3xl">verified_user</span>
+                    <h3 class="font-bold">AUREX Shield</h3>
+                </div>
+                <p class="text-xs text-blue-100 leading-relaxed mb-6">Your card is protected by real-time AI fraud detection and zero-liability guarantee.</p>
+                <button class="w-full py-3 bg-white/10 hover:bg-white/20 rounded-md text-xs font-bold uppercase tracking-widest transition-all">
+                    View Security Report
+                </button>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,226 @@
+<div class="space-y-32 pb-32 font-sans text-[#191c1e] overflow-hidden">
+  <style>
+    @keyframes slideUpFade { 
+      0% { opacity: 0; transform: translateY(40px); } 
+      100% { opacity: 1; transform: translateY(0); } 
+    }
+    @keyframes scaleReveal {
+      0% { opacity: 0; transform: scale(0.95); }
+      100% { opacity: 1; transform: scale(1); }
+    }
+    .anim-slide-up { animation: slideUpFade 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+    .anim-scale { animation: scaleReveal 1s cubic-bezier(0.16, 1, 0.3, 1) forwards; opacity: 0; }
+    .d-100 { animation-delay: 100ms; }
+    .d-200 { animation-delay: 200ms; }
+    .d-300 { animation-delay: 300ms; }
+    .d-400 { animation-delay: 400ms; }
+    .bg-aurex-dark { background-color: #00081e; }
+    .text-aurex-dark { color: #00081e; }
+    .bg-aurex-blue { background-color: #005cab; }
+    .text-aurex-blue { color: #005cab; }
+    
+    /* Interactive Hover Effects */
+    .hover-lift { transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease; cursor: pointer; }
+    .hover-lift:hover { transform: translateY(-8px); box-shadow: 0 20px 40px rgba(0, 8, 30, 0.08); }
+  </style>
+
+  <!-- 1. HERO SECTION -->
+  <section class="pt-32 px-8 max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-16">
+    <div class="flex-1 space-y-8 anim-slide-up d-100">
+      <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-50 border border-blue-100 text-aurex-blue text-xs font-bold uppercase tracking-widest">
+        <span class="w-1.5 h-1.5 rounded-full bg-[#005cab] animate-pulse"></span>
+        Enterprise Grade
+      </div>
+      <h1 class="font-serif italic text-6xl lg:text-7xl leading-tight text-aurex-dark">
+        Architect Your <br />
+        <span class="font-sans normal-case font-light text-slate-400">Empire</span>
+      </h1>
+      <p class="text-xl text-slate-500 leading-relaxed max-w-xl">
+        Scale with absolute confidence using our comprehensive corporate infrastructure. 
+        Engineered exclusively for high-growth entities requiring borderless liquidity and sovereign security.
+      </p>
+      <div class="pt-4 flex items-center gap-6">
+        <button class="bg-[#00081e] text-white px-8 py-4 rounded-md font-semibold hover:bg-[#0a1f44] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
+          Open Business Account
+        </button>
+        <a href="#/about" class="text-slate-500 hover:text-aurex-dark font-semibold transition-colors flex items-center gap-2 group">
+          Explore Solutions 
+          <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+        </a>
+      </div>
+    </div>
+    <div class="flex-1 relative w-full aspect-square max-w-md anim-scale d-300">
+      <div class="absolute inset-0 bg-gradient-to-br from-[#005cab] to-[#00081e] rounded-[40px] blur-3xl opacity-20 animate-pulse"></div>
+      <div class="relative w-full h-full bg-white rounded-[40px] border border-slate-200 shadow-2xl flex items-center justify-center overflow-hidden hover-lift group">
+        <span class="material-symbols-outlined text-[160px] text-aurex-dark opacity-10 group-hover:scale-110 group-hover:opacity-20 transition-all duration-700">account_balance</span>
+        <!-- Decorative grid overlay -->
+        <div class="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:16px_16px] opacity-30"></div>
+        <div class="absolute bottom-12 left-12 right-12 bg-white/80 backdrop-blur-md p-6 rounded-2xl border border-white shadow-sm transform translate-y-4 opacity-0 group-hover:translate-y-0 group-hover:opacity-100 transition-all duration-500">
+          <div class="flex items-center justify-between mb-4">
+            <span class="text-xs font-bold uppercase tracking-widest text-slate-400">Global Balance</span>
+            <span class="material-symbols-outlined text-green-500 text-sm">trending_up</span>
+          </div>
+          <div class="text-3xl font-serif italic text-aurex-dark">$14.2M</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 2. FEATURES GRID -->
+  <section class="px-8 max-w-7xl mx-auto space-y-16">
+    <div class="text-center space-y-4 anim-slide-up d-200">
+      <h2 class="font-serif italic text-4xl text-aurex-dark">Enterprise Architecture</h2>
+      <p class="text-slate-500 max-w-2xl mx-auto">Tools designed to eliminate financial friction across every department.</p>
+    </div>
+    
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div class="bg-white p-8 rounded-2xl border border-slate-100 hover-lift anim-slide-up d-100">
+        <div class="w-12 h-12 bg-[#f0f4f8] text-aurex-blue rounded-xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined">payments</span>
+        </div>
+        <h3 class="font-serif italic text-xl mb-3 text-aurex-dark">Cash Flow Control</h3>
+        <p class="text-sm text-slate-500 leading-relaxed">Automate payables and receivables with granular permission sets and real-time ledger reconciliation.</p>
+      </div>
+      
+      <div class="bg-white p-8 rounded-2xl border border-slate-100 hover-lift anim-slide-up d-200">
+        <div class="w-12 h-12 bg-[#f0f4f8] text-aurex-blue rounded-xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined">public</span>
+        </div>
+        <h3 class="font-serif italic text-xl mb-3 text-aurex-dark">Global Treasury</h3>
+        <p class="text-sm text-slate-500 leading-relaxed">Hold, exchange, and transfer 40+ currencies at interbank rates with zero hidden spreads.</p>
+      </div>
+
+      <div class="bg-white p-8 rounded-2xl border border-slate-100 hover-lift anim-slide-up d-300">
+        <div class="w-12 h-12 bg-[#f0f4f8] text-aurex-blue rounded-xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined">credit_card</span>
+        </div>
+        <h3 class="font-serif italic text-xl mb-3 text-aurex-dark">Corporate Cards</h3>
+        <p class="text-sm text-slate-500 leading-relaxed">Issue unlimited virtual and physical cards with built-in expense management and dynamic limits.</p>
+      </div>
+      
+      <div class="bg-white p-8 rounded-2xl border border-slate-100 hover-lift anim-slide-up d-400">
+        <div class="w-12 h-12 bg-[#f0f4f8] text-aurex-blue rounded-xl flex items-center justify-center mb-6">
+          <span class="material-symbols-outlined">api</span>
+        </div>
+        <h3 class="font-serif italic text-xl mb-3 text-aurex-dark">Developer API</h3>
+        <p class="text-sm text-slate-500 leading-relaxed">Embed Aurex infrastructure directly into your product with our comprehensive REST API.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. OPERATIONS SECTION (SPLIT) -->
+  <section class="px-8 max-w-7xl mx-auto">
+    <div class="bg-aurex-dark rounded-[40px] p-12 lg:p-20 flex flex-col lg:flex-row items-center gap-16 overflow-hidden relative">
+      <!-- Decor -->
+      <div class="absolute top-0 right-0 w-[800px] h-[800px] bg-gradient-to-br from-[#005cab] to-transparent rounded-full opacity-20 mix-blend-screen translate-x-1/3 -translate-y-1/3"></div>
+      
+      <div class="flex-1 space-y-8 relative z-10 anim-slide-up d-200">
+        <h2 class="font-serif italic text-4xl lg:text-5xl text-white">
+          Surgical Precision in <br /> <span class="text-slate-400 font-sans normal-case font-light">Every Operation</span>
+        </h2>
+        <ul class="space-y-6">
+          <li class="flex gap-4">
+            <div class="mt-1 w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-white shrink-0">
+               <span class="material-symbols-outlined text-[14px]">check</span>
+            </div>
+            <div>
+              <h4 class="text-white font-semibold mb-1">Intelligent Routing</h4>
+              <p class="text-slate-400 text-sm leading-relaxed">Our proprietary network determines the fastest, most cost-effective path for every transfer.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <div class="mt-1 w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-white shrink-0">
+               <span class="material-symbols-outlined text-[14px]">check</span>
+            </div>
+            <div>
+              <h4 class="text-white font-semibold mb-1">Automated Accounting</h4>
+              <p class="text-slate-400 text-sm leading-relaxed">Direct synchronization with leading ERP systems to eliminate manual reconciliation.</p>
+            </div>
+          </li>
+          <li class="flex gap-4">
+            <div class="mt-1 w-6 h-6 rounded-full bg-white/10 flex items-center justify-center text-white shrink-0">
+               <span class="material-symbols-outlined text-[14px]">check</span>
+            </div>
+            <div>
+              <h4 class="text-white font-semibold mb-1">Custom Approval Flows</h4>
+              <p class="text-slate-400 text-sm leading-relaxed">Build multi-signature transaction rules based on department, amount, or recipient.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+      
+      <div class="flex-1 relative w-full anim-scale d-400 z-10">
+        <div class="bg-slate-900 border border-slate-700/50 rounded-2xl p-4 shadow-2xl relative">
+          <!-- Mock window header -->
+          <div class="flex items-center gap-2 mb-4 px-2">
+            <div class="w-3 h-3 rounded-full bg-red-500/50"></div>
+            <div class="w-3 h-3 rounded-full bg-yellow-500/50"></div>
+            <div class="w-3 h-3 rounded-full bg-green-500/50"></div>
+          </div>
+          <!-- Mock Chart UI -->
+          <div class="space-y-4">
+            <div class="flex justify-between items-end pb-4 border-b border-white/5">
+              <div>
+                <div class="text-[10px] text-slate-500 uppercase tracking-widest mb-1">Operating Cash Flow</div>
+                <div class="text-2xl font-mono text-white">$4,204,500.00</div>
+              </div>
+              <div class="text-green-400 text-sm flex items-center"><span class="material-symbols-outlined text-[16px]">arrow_upward</span> 12.4%</div>
+            </div>
+            <!-- Mock bars -->
+            <div class="h-40 flex items-end justify-between gap-2 pt-4">
+              <div class="w-full bg-white/10 hover:bg-white/20 transition-colors rounded-t-sm h-[40%]"></div>
+              <div class="w-full bg-white/10 hover:bg-white/20 transition-colors rounded-t-sm h-[60%]"></div>
+              <div class="w-full bg-white/10 hover:bg-white/20 transition-colors rounded-t-sm h-[45%]"></div>
+              <div class="w-full bg-white/10 hover:bg-white/20 transition-colors rounded-t-sm h-[80%]"></div>
+              <div class="w-full bg-[#005cab] rounded-t-sm h-[100%] shadow-[0_0_15px_rgba(0,92,171,0.5)]"></div>
+              <div class="w-full bg-white/10 hover:bg-white/20 transition-colors rounded-t-sm h-[70%]"></div>
+              <div class="w-full bg-white/10 hover:bg-white/20 transition-colors rounded-t-sm h-[85%]"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. BENEFITS STRIP -->
+  <section class="border-y border-slate-200 bg-white anim-slide-up d-100">
+    <div class="max-w-7xl mx-auto px-8">
+      <div class="grid grid-cols-2 md:grid-cols-4 divide-y md:divide-y-0 md:divide-x divide-slate-200">
+        <div class="py-12 px-6 text-center hover:bg-slate-50 transition-colors group">
+          <span class="material-symbols-outlined text-aurex-blue text-[32px] mb-4 group-hover:-translate-y-2 transition-transform duration-300">bolt</span>
+          <h4 class="font-bold text-aurex-dark mb-2">Fast Transactions</h4>
+          <p class="text-[11px] uppercase tracking-widest text-slate-400">T+0 Settlement</p>
+        </div>
+        <div class="py-12 px-6 text-center hover:bg-slate-50 transition-colors group">
+          <span class="material-symbols-outlined text-aurex-blue text-[32px] mb-4 group-hover:-translate-y-2 transition-transform duration-300">shield</span>
+          <h4 class="font-bold text-aurex-dark mb-2">Secure Infrastructure</h4>
+          <p class="text-[11px] uppercase tracking-widest text-slate-400">Bank-Grade Hash</p>
+        </div>
+        <div class="py-12 px-6 text-center hover:bg-slate-50 transition-colors group">
+          <span class="material-symbols-outlined text-aurex-blue text-[32px] mb-4 group-hover:-translate-y-2 transition-transform duration-300">layers</span>
+          <h4 class="font-bold text-aurex-dark mb-2">Scalable Solutions</h4>
+          <p class="text-[11px] uppercase tracking-widest text-slate-400">10k+ TPS Ready</p>
+        </div>
+        <div class="py-12 px-6 text-center hover:bg-slate-50 transition-colors group">
+          <span class="material-symbols-outlined text-aurex-blue text-[32px] mb-4 group-hover:-translate-y-2 transition-transform duration-300">insights</span>
+          <h4 class="font-bold text-aurex-dark mb-2">Real-Time Analytics</h4>
+          <p class="text-[11px] uppercase tracking-widest text-slate-400">Instant Reporting</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. FINAL CTA -->
+  <section class="px-8 max-w-4xl mx-auto text-center space-y-8 pt-16 anim-slide-up d-300">
+    <h2 class="font-serif italic text-4xl lg:text-5xl text-aurex-dark">
+      Ready to redefine your treasury?
+    </h2>
+    <p class="text-slate-500">Join the world's most innovative companies managing capital with Aurex.</p>
+    <div class="pt-4">
+      <button class="bg-[#00081e] text-white px-10 py-5 rounded-md font-bold shadow-2xl hover:bg-[#0a1f44] hover:-translate-y-1 hover:shadow-[0_20px_40px_rgba(0,8,30,0.2)] transition-all duration-300 flex items-center justify-center gap-3 mx-auto">
+        Initiate Onboarding 
+        <span class="material-symbols-outlined">arrow_forward</span>
+      </button>
+    </div>
+  </section>
+</div>
