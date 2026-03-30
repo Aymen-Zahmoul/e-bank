@@ -1,4 +1,42 @@
-<div class="space-y-32 pb-32 font-sans text-[#191c1e] overflow-hidden">
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUREX BANK | Business</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                        serif: ['Manrope', 'sans-serif'],
+                        display: ['Manrope', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        .nav-link { @apply text-slate-600 hover:text-[#00081e] transition-colors; }
+        .nav-link.active { @apply text-[#005cab] font-semibold border-b-2 border-[#005cab] pb-1; }
+        .btn-primary { @apply bg-[#00081e] text-white px-6 py-2.5 rounded-md font-semibold hover:bg-[#0a1f44] transition-all duration-200; }
+        .sidebar-link { @apply flex items-center gap-3 text-slate-500 px-4 py-3 hover:bg-[#eceef1] hover:text-[#005cab] rounded-md transition-all; }
+        .sidebar-link.active { @apply bg-white text-[#00081e] shadow-sm font-semibold; }
+        .sidebar-link.active .material-symbols-outlined { @apply text-[#005cab]; }
+        *, *::before, *::after { transition-property: background-color, border-color, color, fill, stroke, box-shadow; transition-duration: 300ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+    </style>
+</head>
+<body class="bg-[#f7f9fc] text-[#191c1e] font-sans antialiased">
+
+        <div id="navbar"></div>
+        <main class="main-content">
+            <div class="space-y-32 pb-32 font-sans text-[#191c1e] overflow-hidden">
   <style>
     @keyframes slideUpFade { 
       0% { opacity: 0; transform: translateY(40px); } 
@@ -43,7 +81,7 @@
         <button class="bg-[#00081e] text-white px-8 py-4 rounded-md font-semibold hover:bg-[#0a1f44] hover:shadow-xl hover:-translate-y-1 transition-all duration-300">
           Open Business Account
         </button>
-        <a href="#/about" class="text-slate-500 hover:text-aurex-dark font-semibold transition-colors flex items-center gap-2 group">
+        <a href="about.html" class="text-slate-500 hover:text-aurex-dark font-semibold transition-colors flex items-center gap-2 group">
           Explore Solutions 
           <span class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
         </a>
@@ -224,3 +262,10 @@
     </div>
   </section>
 </div>
+
+        </main>
+        <div id="footer"></div>
+        
+    <script src="../js/components.js"></script>
+</body>
+</html>

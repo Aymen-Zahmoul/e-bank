@@ -1,10 +1,10 @@
 <!doctype html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>AUREX BANK | Premium Wealth Management</title>
-    <link rel="stylesheet" href="/src/css/styles.css">
+    <title>AUREX BANK | Home</title>
+    <link rel="stylesheet" href="css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
     <script src="https://cdn.tailwindcss.com"></script>
@@ -23,146 +23,167 @@
         }
     </script>
     <style type="text/tailwindcss">
-        /* Component specific styles */
         .nav-link { @apply text-slate-600 hover:text-[#00081e] transition-colors; }
         .nav-link.active { @apply text-[#005cab] font-semibold border-b-2 border-[#005cab] pb-1; }
-        .btn-primary { @apply bg-[#00081e] text-white px-6 py-2.5 rounded-md font-semibold hover:bg-[#0a1f44] transition-all active:scale-95 duration-200; }
+        .btn-primary { @apply bg-[#00081e] text-white px-6 py-2.5 rounded-md font-semibold hover:bg-[#0a1f44] transition-all duration-200; }
         .sidebar-link { @apply flex items-center gap-3 text-slate-500 px-4 py-3 hover:bg-[#eceef1] hover:text-[#005cab] rounded-md transition-all; }
         .sidebar-link.active { @apply bg-white text-[#00081e] shadow-sm font-semibold; }
         .sidebar-link.active .material-symbols-outlined { @apply text-[#005cab]; }
+        *, *::before, *::after { transition-property: background-color, border-color, color, fill, stroke, box-shadow; transition-duration: 300ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
     </style>
-    <style>
-        /* Dark Mode Overrides & Transitions */
-        html.dark {
-            background-color: #111827;
-            color: #f3f4f6;
-        }
-        html.dark body, html.dark .bg-\[\#f7f9fc\] { background-color: #111827 !important; }
-        html.dark .bg-white { background-color: #1f2937 !important; }
-        html.dark .bg-slate-50 { background-color: #374151 !important; }
-        html.dark .text-\[\#00081e\] { color: #ffffff !important; }
-        html.dark .text-\[\#191c1e\] { color: #f3f4f6 !important; }
-        html.dark .text-slate-600, html.dark .text-slate-500, html.dark .text-slate-400 { color: #cbd5e1 !important; }
-        html.dark .border-slate-100, html.dark .border-slate-200 { border-color: #475569 !important; }
-        
-        html.dark .bg-\[\#00081e\] { background-color: #0ea5e9 !important; color: #ffffff !important; }
-        html.dark .bg-indigo-50 { background-color: rgba(99, 102, 241, 0.2) !important; }
-        html.dark .bg-blue-50 { background-color: rgba(59, 130, 246, 0.2) !important; }
-        html.dark .bg-green-50 { background-color: rgba(34, 197, 94, 0.2) !important; color: #4ade80 !important; }
-        html.dark .text-\[\#005cab\] { color: #38bdf8 !important; }
-        html.dark .border-\[\#005cab\] { border-color: #38bdf8 !important; }
+</head>
+<body class="bg-[#f7f9fc] text-[#191c1e] font-sans antialiased">
 
-        html.dark .nav-link:hover { color: #ffffff !important; }
-        html.dark .nav-link.active { color: #38bdf8 !important; border-bottom-color: #38bdf8 !important; }
-        html.dark .sidebar-link:hover { background-color: #374151 !important; color: #ffffff !important; }
-        html.dark .sidebar-link.active { background-color: #1f2937 !important; color: #ffffff !important; box-shadow: none !important; border: 1px solid #4b5563; }
-        html.dark .sidebar-link.active .material-symbols-outlined { color: #38bdf8 !important; }
-
-        /* The button dark mode toggle switch */
-        .toggle-switch {
-            position: relative;
-            width: 60px;
-            height: 30px;
-            --light: #d8dbe0;
-            --dark: #28292c;
-            --link: rgb(27, 129, 112);
-            --link-hover: rgb(24, 94, 82);
-            z-index: 100;
-        }
-
-        .switch-label {
-            position: absolute;
-            width: 100%;
-            height: 30px;
-            background-color: var(--dark);
-            border-radius: 15px;
-            cursor: pointer;
-            border: 3px solid var(--dark);
-            box-sizing: border-box;
-        }
-
-        .checkbox {
-            position: absolute;
-            display: none;
-        }
-
-        .slider {
-            position: absolute;
-            width: 100%;
-            height: 100%;
-            border-radius: 15px;
-            -webkit-transition: 0.3s;
-            transition: 0.3s;
-        }
-
-        .checkbox:checked ~ .slider {
-            background-color: var(--light);
-        }
-
-        .slider::before {
-            content: "";
-            position: absolute;
-            top: 2px;
-            left: 2px;
-            width: 20px;
-            height: 20px;
-            border-radius: 50%;
-            -webkit-box-shadow: inset 8px -3px 0px 0px var(--light);
-            box-shadow: inset 8px -3px 0px 0px var(--light);
-            background-color: var(--dark);
-            -webkit-transition: 0.3s;
-            transition: 0.3s;
-        }
-
-        .checkbox:checked ~ .slider::before {
-            -webkit-transform: translateX(30px);
-            -ms-transform: translateX(30px);
-            transform: translateX(30px);
-            background-color: var(--dark);
-            -webkit-box-shadow: none;
-            box-shadow: none;
-        }
-
-        /* Global Transitions Refinement */
-        *, *::before, *::after {
-            transition-property: background-color, border-color, color, fill, stroke, box-shadow;
-            transition-duration: 300ms;
-            transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-        }
-    </style>
-  </head>
-  <body class="bg-[#f7f9fc] text-[#191c1e] font-sans antialiased">
-    <div id="app"></div>
-    
-    <!-- Floating Dark Mode Toggle -->
-    <div class="fixed bottom-6 right-6 z-[9999]" title="Toggle Dark/Light Mode">
-      <div class="toggle-switch">
-        <label class="switch-label">
-          <input type="checkbox" class="checkbox" id="dark-mode-toggle">
-          <span class="slider"></span>
-        </label>
-      </div>
+        <div id="navbar"></div>
+        <main class="main-content">
+            <section class="max-w-[1280px] mx-auto px-8 py-24 flex flex-col lg:flex-row items-center gap-16 relative">
+    <div class="flex-1 space-y-8 relative z-10">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-100 text-[#001c3a] text-xs font-bold tracking-wider uppercase">
+            <span class="material-symbols-outlined text-sm">verified</span>
+            The Vanguard of Digital Wealth
+        </div>
+        <h1 class="font-headline text-5xl lg:text-7xl font-bold text-[#00081e] tracking-tight leading-[1.1]">
+            Banking Built for Precision, Security, and Growth
+        </h1>
+        <p class="text-slate-600 text-xl max-w-xl leading-relaxed">
+            Experience architectural financial engineering. Manage global assets with a platform designed for the most demanding institutional standards and individual ambitions.
+        </p>
+        <div class="flex flex-wrap gap-4 pt-4">
+            <a href="pages/signup.html" class="bg-[#00081e] text-white px-8 py-4 rounded-md font-bold text-lg hover:shadow-xl transition-all active:scale-95 hero-gradient flex items-center justify-center">Open Account</a>
+            <button class="border border-slate-200 text-[#005cab] px-8 py-4 rounded-md font-bold text-lg hover:bg-slate-50 transition-all">Explore Services</button>
+        </div>
+        <div class="pt-8 flex items-center gap-4">
+            <div class="flex -space-x-3">
+                <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://picsum.photos/seed/user1/100/100" referrerPolicy="no-referrer"/>
+                <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://picsum.photos/seed/user2/100/100" referrerPolicy="no-referrer"/>
+                <img class="w-10 h-10 rounded-full border-2 border-white object-cover" src="https://picsum.photos/seed/user3/100/100" referrerPolicy="no-referrer"/>
+            </div>
+            <p class="text-sm text-slate-500 font-medium">Trusted by over <span class="text-[#00081e] font-bold">1 million</span> active users</p>
+        </div>
     </div>
+    <div class="flex-1 relative w-full perspective-1000 min-h-[500px] flex items-center justify-center">
+        <div class="relative z-20 w-full max-w-[540px] rotate-3d-dashboard preserve-3d transition-transform duration-500 hover:rotate-0">
+            <div class="w-full bg-white rounded-2xl shadow-2xl p-8 border border-slate-100 relative">
+                <div class="flex justify-between items-center mb-10">
+                    <div>
+                        <h3 class="font-headline font-bold text-slate-400 text-sm uppercase tracking-widest mb-1">Total Portfolio</h3>
+                        <p class="text-4xl font-bold text-[#00081e] font-headline tracking-tighter">$2,482,194.00</p>
+                    </div>
+                    <div class="bg-green-50 text-green-600 px-4 py-1.5 rounded-lg text-sm font-bold flex items-center gap-1 shadow-sm">
+                        <span class="material-symbols-outlined text-sm">trending_up</span>
+                        +12.4%
+                    </div>
+                </div>
+                <div class="grid grid-cols-2 gap-6 mb-10">
+                    <div class="bg-slate-50 p-4 rounded-xl">
+                        <p class="text-xs text-slate-400 font-bold mb-2">SAVINGS</p>
+                        <div class="h-2 bg-slate-200 rounded-full w-full mb-1">
+                            <div class="h-full bg-[#00081e] w-[65%] rounded-full"></div>
+                        </div>
+                    </div>
+                    <div class="bg-slate-50 p-4 rounded-xl">
+                        <p class="text-xs text-slate-400 font-bold mb-2">INVESTMENTS</p>
+                        <div class="h-2 bg-slate-200 rounded-full w-full mb-1">
+                            <div class="h-full bg-[#005cab] w-[85%] rounded-full"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="absolute -top-12 -right-8 w-72 h-44 hero-gradient rounded-xl shadow-2xl p-6 text-white flex flex-col justify-between transform rotate-[15deg] border border-white/10 animate-float">
+                <div class="flex justify-between items-start">
+                    <span class="text-lg font-bold tracking-tight">AUREX BLACK</span>
+                    <span class="material-symbols-outlined text-white/40">contactless</span>
+                </div>
+                <div class="space-y-2">
+                    <p class="text-[10px] opacity-40 uppercase tracking-[0.3em]">Institutional Grade</p>
+                    <p class="font-mono text-lg tracking-[0.2em]">•••• •••• •••• 8821</p>
+                    <div class="flex justify-between items-end">
+                        <p class="text-[10px] opacity-60">JULIAN STERLING</p>
+                        <div class="flex -space-x-1">
+                            <div class="w-6 h-6 rounded-full bg-white/20"></div>
+                            <div class="w-6 h-6 rounded-full bg-white/10"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
-    <script type="module" src="/src/js/app.js"></script>
-    <script>
-      const toggle = document.getElementById('dark-mode-toggle');
-      // Load saved theme
-      if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.classList.add('dark');
-          toggle.checked = true;
-      }
-      
-      toggle.addEventListener('change', (e) => {
-          if (e.target.checked) {
-              document.documentElement.classList.add('dark');
-              localStorage.setItem('theme', 'dark');
-          } else {
-              document.documentElement.classList.remove('dark');
-              localStorage.setItem('theme', 'light');
-          }
-      });
-    </script>
-  </body>
+<section class="bg-slate-50 py-32">
+    <div class="max-w-[1280px] mx-auto px-8">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="bg-white p-8 rounded-lg space-y-4 hover:shadow-lg transition-all duration-300">
+                <div class="w-12 h-12 bg-blue-50 text-[#005cab] flex items-center justify-center rounded-md">
+                    <span class="material-symbols-outlined text-3xl">bolt</span>
+                </div>
+                <h3 class="font-headline font-bold text-xl">Instant Transfers</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Move capital across borders in milliseconds with our proprietary ledger technology.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg space-y-4 hover:shadow-lg transition-all duration-300">
+                <div class="w-12 h-12 bg-blue-50 text-[#005cab] flex items-center justify-center rounded-md">
+                    <span class="material-symbols-outlined text-3xl">no_accounts</span>
+                </div>
+                <h3 class="font-headline font-bold text-xl">Zero Hidden Fees</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Absolute transparency in pricing. No maintenance fees, ever.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg space-y-4 hover:shadow-lg transition-all duration-300">
+                <div class="w-12 h-12 bg-blue-50 text-[#005cab] flex items-center justify-center rounded-md">
+                    <span class="material-symbols-outlined text-3xl">monitoring</span>
+                </div>
+                <h3 class="font-headline font-bold text-xl">Real-Time Analytics</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Deep insights into spending habits and investment performance at your fingertips.</p>
+            </div>
+            <div class="bg-white p-8 rounded-lg space-y-4 hover:shadow-lg transition-all duration-300">
+                <div class="w-12 h-12 bg-blue-50 text-[#005cab] flex items-center justify-center rounded-md">
+                    <span class="material-symbols-outlined text-3xl">security</span>
+                </div>
+                <h3 class="font-headline font-bold text-xl">Advanced Security</h3>
+                <p class="text-slate-500 text-sm leading-relaxed">Biometric authentication and AES-256 encryption secure every byte of data.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="max-w-[1280px] mx-auto px-8 py-32 space-y-16">
+    <div class="text-center max-w-2xl mx-auto space-y-4">
+        <h2 class="font-headline text-4xl font-bold tracking-tight">Tailored Financial Solutions</h2>
+        <p class="text-slate-500">We provide the architectural foundation for your economic growth, regardless of scale.</p>
+    </div>
+    <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+        <div class="group relative h-[450px] overflow-hidden rounded-xl bg-[#00081e] flex items-end p-8">
+            <img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" src="https://picsum.photos/seed/wealth/800/1200" referrerPolicy="no-referrer"/>
+            <div class="relative z-10 space-y-4">
+                <h3 class="text-white font-headline text-2xl font-bold">Wealth Management</h3>
+                <p class="text-slate-300 text-sm">Sophisticated investment strategies and personalized asset allocation for high-net-worth portfolios.</p>
+                <a href="pages/wealth-management.html" class="text-white font-bold flex items-center gap-2 group-hover:gap-4 transition-all">Explore Service <span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#00081e] via-[#00081e]/20 to-transparent"></div>
+        </div>
+        <div class="group relative h-[450px] overflow-hidden rounded-xl bg-[#00081e] flex items-end p-8">
+            <img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" src="https://picsum.photos/seed/corporate/800/1200" referrerPolicy="no-referrer"/>
+            <div class="relative z-10 space-y-4">
+                <h3 class="text-white font-headline text-2xl font-bold">Corporate Banking</h3>
+                <p class="text-slate-300 text-sm">Comprehensive cash management, trade finance, and credit facilities for multinational corporations.</p>
+                <a href="pages/business.html" class="text-white font-bold flex items-center gap-2 group-hover:gap-4 transition-all">Explore Service <span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#00081e] via-[#00081e]/20 to-transparent"></div>
+        </div>
+        <div class="group relative h-[450px] overflow-hidden rounded-xl bg-[#00081e] flex items-end p-8">
+            <img class="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:scale-110 transition-transform duration-700" src="https://picsum.photos/seed/commercial/800/1200" referrerPolicy="no-referrer"/>
+            <div class="relative z-10 space-y-4">
+                <h3 class="text-white font-headline text-2xl font-bold">Commercial Banking</h3>
+                <p class="text-slate-300 text-sm">Scalable lending solutions and specialized advisory for rapidly expanding mid-market enterprises.</p>
+                <a href="pages/business.html" class="text-white font-bold flex items-center gap-2 group-hover:gap-4 transition-all">Explore Service <span class="material-symbols-outlined">arrow_forward</span></a>
+            </div>
+            <div class="absolute inset-0 bg-gradient-to-t from-[#00081e] via-[#00081e]/20 to-transparent"></div>
+        </div>
+    </div>
+</section>
+
+        </main>
+        <div id="footer"></div>
+        
+    <script src="js/components.js"></script>
+</body>
 </html>
-

@@ -204,3 +204,16 @@
   20% { opacity: 1; transform: translateY(-2px); }
   100% { opacity: 0; transform: translateY(0); }
 }
+
+/* Page Transition Effects */
+.page-transition {
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  transform: translateY(5px);
+}
+.page-transition.fade-in {
+  opacity: 1;
+  transform: translateY(0);
+}
+.page-transition.opacity-0 {
+  opacity: 0;
+}

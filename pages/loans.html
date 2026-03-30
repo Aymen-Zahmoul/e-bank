@@ -1,4 +1,43 @@
-<div class="p-8 space-y-8 max-w-[1400px]">
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AUREX BANK | Loans</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+                        serif: ['Manrope', 'sans-serif'],
+                        display: ['Manrope', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style type="text/tailwindcss">
+        .nav-link { @apply text-slate-600 hover:text-[#00081e] transition-colors; }
+        .nav-link.active { @apply text-[#005cab] font-semibold border-b-2 border-[#005cab] pb-1; }
+        .btn-primary { @apply bg-[#00081e] text-white px-6 py-2.5 rounded-md font-semibold hover:bg-[#0a1f44] transition-all duration-200; }
+        .sidebar-link { @apply flex items-center gap-3 text-slate-500 px-4 py-3 hover:bg-[#eceef1] hover:text-[#005cab] rounded-md transition-all; }
+        .sidebar-link.active { @apply bg-white text-[#00081e] shadow-sm font-semibold; }
+        .sidebar-link.active .material-symbols-outlined { @apply text-[#005cab]; }
+        *, *::before, *::after { transition-property: background-color, border-color, color, fill, stroke, box-shadow; transition-duration: 300ms; transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1); }
+    </style>
+</head>
+<body class="bg-[#f7f9fc] text-[#191c1e] font-sans antialiased">
+
+        <div class="with-sidebar">
+            <div id="sidebar"></div>
+            <div class="content-area p-8 w-full max-w-[1400px]">
+                <div class="p-8 space-y-8 max-w-[1400px]">
     <header class="flex justify-between items-center mb-8">
         <div>
             <h2 class="text-2xl font-bold text-[#00081e]">Loan Solutions</h2>
@@ -103,3 +142,10 @@
         </div>
     </div>
 </div>
+
+            </div>
+        </div>
+        
+    <script src="../js/components.js"></script>
+</body>
+</html>
