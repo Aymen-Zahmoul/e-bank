@@ -1,0 +1,10 @@
+fastapi
+uvicorn
+google-auth
+requests
+python-dotenv
+pydantic
+pydantic-settings
+pytest
+httpx
+email-validator
